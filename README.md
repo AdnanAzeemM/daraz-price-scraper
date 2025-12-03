@@ -52,19 +52,51 @@ daraz-scraper/
 ├── requirements.txt
 └── README.md
 
-📦 Installation
-1. Clone Repo
-git clone https://github.com/<your-username>/daraz-price-scraper.git
+### 📦 Installation
+
+#### 1. Clone Repository
+```bash
+git clone https://github.com/AdnanAzeemM/daraz-price-scraper.git
 cd daraz-price-scraper
+```
 
-2. Install Requirements
-pip3 install -r requirements.txt
+#### 2. Install Requirements
+```bash
+pip install -r requirements.txt
+```
 
-3. Install Playwright Browsers
+#### 3. Install Playwright Browsers
+
+**Windows**
+```bash
+py -m playwright install chromium
+```
+
+**macOS / Linux**
+```bash
 python3 -m playwright install chromium
+```
 
-▶️ Run the Scraper
+
+## ▶️ Run the Scraper
+
+#### 🪟 Windows
+```bash
+py src/scraper.py
+```
+
+#### 🍏 macOS / 🐧 Linux
+```bash
 python3 src/scraper.py
+```
+
+---
+
+## 📂 Output
+Scraped data will be saved to:
+
+```
+src/output/products.csv
 
 
 Default search keyword = laptop
